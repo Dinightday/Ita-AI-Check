@@ -1,5 +1,7 @@
-from typing import TypedDict
+from typing import TypedDict, Annotated
+from langchain_core.messages import AnyMessage
+from langgraph.graph import add_messages
 
 class Dict(TypedDict):
-    resposta: str
+    messages: Annotated[list[AnyMessage], add_messages]
     pergunta: str

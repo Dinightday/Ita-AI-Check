@@ -4,7 +4,8 @@ class Prompts:
     def __init__(self):
         self.prompt1 = ChatPromptTemplate.from_messages([
             ("system", """De acordo com o que o usuário quer, 
-             Classifique se ele merece um empréstimo com 'yes'
-              ou se não merece com um 'no'."""),
+             use uma das ferramentas:
+                Chame 'emprestimo' se o usuário merece
+                Chame 'nao_emprestimo' se não merece."""),
             ("human", "{query}")
         ])

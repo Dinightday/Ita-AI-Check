@@ -4,34 +4,39 @@
   <img src="https://shields.io" />
 </div>
 
-<h1 align="center">🏦 Filtro-Inteligente-IA</h1>
+<h1 align="center">🏦 Graph-Risk-Engine</h1>
 
 <p align="center">
-  <strong>Protótipo de Engenharia de IA para detecção de valores exuberantes e análise de risco contextual.</strong>
+  <strong>Orquestração de Grafos Inteligentes para Decisão Crítica de Crédito e Exuberância.</strong>
 </p>
 
 <hr>
 
-<h2>🚀 O Diferencial</h2>
+<h2>🚀 Arquitetura de Grafo vs. Scripts Lineares</h2>
 <p>
-  Este projeto foge das regras fixas de <code>if/else</code>. Ele utiliza <b>IA Generativa</b> para realizar uma <b>análise semântica</b> das transações:
+  Este projeto substitui o processamento linear ineficiente por um <b>Grafo de Estados (StateGraph)</b>. Em vez de inputs e outputs soltos, utilizamos o <b>LangGraph</b> para manter o estado da transação e permitir uma análise multinível sem depender de regras rígidas (<code>if/else</code>).
+</p>
+
+<h2>🧠 Motor de Decisão Autônoma</h2>
+<p>
+  O sistema é composto por nós especializados que processam o fluxo de dados de forma assíncrona:
 </p>
 
 <ul>
-  <li><b>Identificação de Exuberância:</b> Reconhece valores próximos a limites críticos (como R$ 10k) de forma orgânica.</li>
-  <li><b>Análise de Contexto:</b> Diferencia se um valor alto faz sentido para a categoria (ex: Supermercado vs. Concessionária).</li>
-  <li><b>Human-in-the-loop:</b> Encaminha automaticamente casos duvidosos para validação humana.</li>
+  <li><b>Nó de Triagem Semântica:</b> Avalia a coerência entre valor, local e categoria através de embeddings/LLM.</li>
+  <li><b>Identificação de Exuberância:</b> Detecta anomalias contextuais (ex: valores próximos a 10k em contextos de baixo ticket médio).</li>
+  <li><b>Final State Decision:</b> A IA atua como juiz final, emitindo um veredito autônomo baseado no acúmulo de risco no grafo.</li>
 </ul>
 
-<h2>🛠️ Tecnologias</h2>
+<h2>🛠️ Stack Técnica</h2>
 <p>
-  - <b>Python</b>: Lógica principal.<br>
-  - <b>GenAI/LLM</b>: Motor de decisão semântica.<br>
-  - <b>Scikit-Learn</b>: Base para integração com modelos clássicos (SVM/Random Forest).
+  - <b>LangGraph / LangChain</b>: Orquestração de agentes e manutenção de estado.<br>
+  - <b>Python (Async)</b>: Processamento de alto desempenho para múltiplos inputs.<br>
+  - <b>GenAI Core</b>: Modelos de linguagem atuando como nós de raciocínio lógico.
 </p>
 
 <hr>
 
 <p align="center">
-  <i>"Aos 15 anos, construindo o futuro da engenharia de IA."</i>
+  <i>"Construindo sistemas de decisão autônomos e escaláveis."</i>
 </p>

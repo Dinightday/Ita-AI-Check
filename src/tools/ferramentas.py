@@ -2,10 +2,12 @@ from langchain_core.tools import tool
 
 @tool
 def emprestimo():
-    """Usa-se quando o empréstimo é aceito."""
-    return "Empréstimo aprovado!"
+    """ACIONE esta ferramenta imediatamente se o motivo do empréstimo for 
+    legítimo e profissional."""
+    print("Empréstimo aceito")
 
 @tool
 def nao_emprestimo():
-    """Usa-se quando o empréstimo é por motivo bobo."""
-    return "Empréstimo rejeitado por motivo inválido"
+    """ACIONE esta ferramenta imediatamente se o motivo do empréstimo for 
+    ilegal, suspeito (como lavagem de dinheiro) ou fútil."""
+    print("Empréstimo rejeitado")

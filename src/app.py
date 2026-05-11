@@ -1,5 +1,5 @@
 import streamlit as st
-from grafo import pergunta
+from grafo import pergunta, assistente
 
 st.set_page_config(
     page_icon="🏦", 
@@ -11,6 +11,7 @@ st.title("Banco de empréstimos")
 texto = st.text_input(label="Seu motivo do emprestimo:")
 button = st.button("Enviar")
 
-with st.spinner():
+with st.spinner("Rodando"):
     if button:
-        pergunta(texto)
+        resposta = pergunta(texto)
+        st.write(resposta)

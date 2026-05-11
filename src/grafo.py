@@ -33,4 +33,6 @@ def assistente():
 
 def pergunta(query):
     grafo = assistente()
-    grafo.invoke({"pergunta": query})
+    response = grafo.invoke({"pergunta": query})
+    ult = response["messages"][-1]
+    return ult.content

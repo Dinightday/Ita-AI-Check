@@ -31,7 +31,6 @@
 <h2>🛠️ Stack Técnica</h2>
 <p>
   - <b>LangGraph / LangChain</b>: Orquestração de agentes e manutenção de estado.<br>
-  - <b>Python (Async)</b>: Processamento de alto desempenho para múltiplos inputs.<br>
   - <b>GenAI Core</b>: Modelos de linguagem atuando como nós de raciocínio lógico.
 </p>
 
